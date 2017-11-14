@@ -10,5 +10,19 @@
 </head>
 <body>
   <app-root></app-root>
+
+  <!-- form id="formform">
+    <button>Click</button>
+  </form-->
+
+  <script>
+    const form = document.querySelector("#formform");
+    form.addEventListener('submit', function (e) {
+      console.log('this form is not going anywhere');
+      var foo;
+      foo.doesNotExist();
+      e.preventDefault();
+    });
+  </script>
 </body>
 </html>

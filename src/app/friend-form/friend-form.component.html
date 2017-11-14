@@ -1,0 +1,21 @@
+<form #form="ngForm" (submit)="handleNewFriend()">
+  <div id="first-name-div">
+    <label>
+      First name
+      <input name="firstName" type="text" [(ngModel)]="firstName" required>
+    </label>
+  </div>
+  <div>
+    <label>
+      Favorite color
+      <input name="color" type="color" [(ngModel)]="color">
+    </label>
+  </div>
+  <div>
+    <label>
+      Birthday
+      <input name="birthDay" type="date" [(ngModel)]="birthDay">
+    </label>
+  </div>
+  <button [disabled]="!form.valid">{{ verb }} friend</button>
+</form>
